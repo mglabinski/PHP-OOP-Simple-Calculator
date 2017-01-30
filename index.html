@@ -1,0 +1,24 @@
+<?php require ("calculator.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator OOP</title>
+</head>
+<body>
+<?php
+//will add a form soon
+$num1 = 234;
+$num2 = 196;
+$operator = "+";
+
+$calculator = new Calculator();
+$calculator ->setNumber($num1, $num2);
+$calculator ->setOperator($operator);
+$calculator ->calculate();
+$calculator ->getOutput();
+
+</body>
+</html>
